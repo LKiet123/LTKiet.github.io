@@ -1,0 +1,29 @@
+body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+}
+  /* Mobile*/
+@media (max-width: 576px) {
+  
+    .container .row {
+        flex-direction: column;
+    }
+
+    .container .col-12 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 768px) {
+    
+    .container .row {
+        flex-wrap: wrap;
+    }
+    .list-unstyled li i{
+        justify-content: center;
+        text-align: center;
+    }
+
+   
+}
