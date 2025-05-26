@@ -12,6 +12,28 @@ body {
     .container .col-12 {
         margin-bottom: 20px;
     }
+
+    .timeline-number {
+        background-color: #9e88ff;
+        color: rgb(0, 44, 52);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: inline-flex;/* Hiển thị nội dung theo flexbox dạng inline */
+        align-items: center;
+        justify-content: center;
+    }
+    /* border bottom cho title */
+    .card-title {
+        border-bottom: 1px solid #979797;
+        padding-bottom: 10px;
+    }
+    /* border bottom chp goals và timeline */
+    .card-timeline {
+        border-bottom: 1px dashed #979797;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
 }
 
 /* Tablet */
@@ -24,6 +46,26 @@ body {
         justify-content: center;
         text-align: center;
     }
-
+    .timeline-number {
+        background-color: #9e88ff;
+        color: rgb(0, 44, 52);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: inline-flex;/* Hiển thị nội dung theo flexbox dạng inline */
+        align-items: center;
+        justify-content: center;
+    }
+    /* border bottom cho title */
+    .card-title {
+        border-bottom: 1px solid #979797;
+        padding-bottom: 10px;
+    }
+    /* border bottom chp goals và timeline */
+    .card-timeline {
+        border-bottom: 1px dashed #979797;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
    
 }
