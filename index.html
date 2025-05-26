@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font.css" />
+    <!-- CSS Responsive -->
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/laptop.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/font.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <title>Profile</title>
+  </head>
+  <body>
+    <!-- thông tin trong banner -->
+    <div class="header txt" id="header">
+      <div class="header-img"></div>
+      <h1 class="animate-element">
+        Hello,<br />
+        I'm Luong Tuan Kiet
+      </h1>
+      <p class="animate-element" style="line-height: 0; font-weight: 600">
+        Web Programmer Intern
+      </p>
+      <br /><br />
+      <div>
+        <a href="#about" class="btn mx-auto btn-started btn btn-primary">Get
+          Start</a>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <div class="nav">
+      <a href="#about"><i class="icon-user" style="color: blue"></i> ABOUT</a>
+      <a href="#resume"><i class="icon-doc-text-inv" style="color: blue"></i>
+        RESUME</a>
+
+      <div class="avar">
+        <div class="avatar-container">
+          <img src="images/canhan.png" alt="Avatar" class="avatar" />
+        </div>
+      </div>
+
+      <a href="#certificates"><i class="icon-mail-alt" style="color: blue"></i>
+        CERTIFICATES</a>
+      <a href="#projects"><i class="icon-star-1" style="color: blue"></i>
+        PROJECTS</a>
+    </div>
+
+    <!-- thông tin nghề nghiệp -->
+    <div class="content">
+      <div class="info" id="about">
+        <div class="info-secsion">
+          <h1 class="pos">Career Objective</h1>
+          <p class="pos">
+            I am seeking an internship opportunity in the field of web
+            development to apply the knowledge I have gained, strengthen my
+            technical skills, and learn from experienced professionals. At the
+            same time, I strive to improve my soft skills and teamwork
+            abilities, with the goal of becoming a professional web developer
+            within the next 2 to 3 years.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- thông tin cá nhân -->
+    <div class="content" style="background-color: rgb(223, 243, 255)">
+      <div class="info">
+        <div id="email-form-container" class="info-secsion pos">
+          <!-- nhap thong tin email -->
+          <h1 style="padding: 0;">Personal Information</h1>
+          <input
+            class="form-control"
+            type="email"
+            id="email-input"
+            placeholder="Please input your email here..." />
+          <p style="margin: 0">Please enter your email to verify.</p>
+          <p id="error-message" style="color: red; font-size: 1em"></p>
+          <button
+            id="submit-btn"
+            type="submit"
+            class="btn btn-primary mt-2 w-25">
+            Submit
+          </button>
+        </div>
+        <!-- info-section -->
+        <div class="hide" id="info-container">
+          <h1 class="pos">Personal Information</h1>
+          <p class="pos" style="margin: 0"><b>Full Name:</b> Luong Tuan Kiet</p>
+          <p class="pos" style="margin: 0"><b>Gender:</b> Male</p>
+          <p class="pos" style="margin: 0"><b>Date of Birth:</b> January 23, 2003</p>
+          <p class="pos" style="margin: 0"><b>Phone:</b> (+84) 849319913</p>
+          <p class="pos" style="margin: 0"><b>Email:</b> kietluong333@gmail.com</p>
+          <p class="pos" style="margin: 0"><b>Address:</b> Linh Chieu Ward, Thu Duc City</p>
+          <p class="pos" style="margin: 0"><b>Website:</b> jies.id.vn</p>
+
+          <div  class="social-icons pos" style="margin-right: 10px">
+            <a href="x.com"><i class="icon-twitter"></i></a>
+            <a href="facebook.com"><i class="icon-facebook"></i></a>
+            <a href="google."><i class="icon-gplus"></i></a>
+            <a href="linkedin.com"><i class="icon-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- kinh nghiệm -->
+    <div class="container" id="resume">
+      <!-- Học Vấn -->
+      <div class="section">
+        <h2 class="section-title">
+          Education <b style="margin-left: 8rem" class="ic-pencil"></b>
+        </h2>
+        <!-- an thong tin hoc van -->
+        <ul class="content-list hidden">
+          <li class="content-item">
+            <p class="item-title" style="font-weight: 700; color: blue">
+              THU DUC COLLEGE OF TECHNOLOGY
+            </p>
+            <div class="item-details">
+              <p><i>September 2023 - Now</i></p>
+              <p style="margin: 0; color: rgb(79, 79, 79)">
+                -FACULTY OF INFORMATION TECHNOLOGY<br />(WEB PROGRAMMING)
+              </p>
+              <p style="margin: 0; color: rgb(79, 79, 79)">- GPA: 7.28/10</p>
+            </div>
+          </li>
+          <!-- <li class="content-item">
+            <p class="item-title" style="font-weight: 500;">Cử nhân - DH FPT</p>
+            <div class="item-details">
+              <p><i>08/2016 - 07/2019</i></p>
+              <p style="margin: 0; color: rgb(79, 79, 79);">- Chuyên ngành: Kỹ thuật phần mềm</p>
+              <p style="margin: 0; color: rgb(79, 79, 79);">- GPA: 3.2/4</p>
+            </div>
+          </li> -->
+        </ul>
+        <button class="toggle-btn">View More</button>
+      </div>
+
+      <!-- Hoạt động -->
+      <!-- <div class="section">
+        <h2 class="section-title">Hoạt động <b style="margin-left: 5rem;" class="ic-toolbox"></b></h2>
+         <ul class="content-list hidden">
+          <li class="content-item">
+            <p class="item-title" style="font-weight: 500;">FPT Edu Hackathon 2019</p>
+            <div class="item-details">
+              <p><i>03/2019 - 05/2019</i></p>
+              <p style="margin: 0; color: rgb(79, 79, 79);">- Giải 3 bảng A</p>
+              <p style="margin: 0; color: rgb(79, 79, 79);">- Đề tài: Trang Web về phân loại rác thải</p>
+            </div>
+          </li>
+          <li class="content-item">
+            <p class="item-title" style="font-weight: 500;">Câu lạc bộ Z</p>
+            <div class="item-details">
+              <p><i style="color: rgb(79, 79, 79);">08/2016 - 08/2017</i></p>
+              <p style="color: rgb(79, 79, 79);">- Trưởng ban chuyên môn</p>
+            </div>
+          </li>
+        </ul>
+        <button class="toggle-btn">View More</button>
+      </div> -->
+
+      <!-- Sở thích -->
+      <div class="section">
+        <h2 class="section-title">
+          Hobby <b style="margin-left: 8rem" class="ic-telescope"></b>
+        </h2>
+        <!-- An thong tin so thich -->
+        <div class="content-list hidden">
+          <div class="hobbies">
+            <div>
+              <img
+                src="images/music.gif"
+                alt="Nghe nhạc"
+                style="
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 50%;
+                  margin-right: 10px;
+                " />
+              <br />
+              <p style="color: blue; font-weight: 700">Music</p>
+            </div>
+            <div>
+              <img
+                src="images/Jogging.gif"
+                alt="Chạy bộ"
+                style="
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 50%;
+                  margin-right: 10px;
+                " />
+              <br />
+              <p style="color: blue; font-weight: 700">Jogging</p>
+            </div>
+            <div>
+              <img
+                src="images/Travel.gif"
+                alt="Du lịch"
+                style="
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 50%;
+                  margin-right: 10px;
+                " />
+              <br />
+              <p style="color: blue; font-weight: 700">Travel</p>
+            </div>
+            <div>
+              <img
+                src="images/reading.gif"
+                alt="Đọc sách"
+                style="
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 50%;
+                  margin-right: 10px;
+                " />
+              <br />
+              <p style="color: blue; font-weight: 700">Reading</p>
+            </div>
+            <div>
+              <img
+                src="images/cooking.gif"
+                alt="Nấu ăn"
+                style="
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 50%;
+                  margin-right: 10px;
+                " />
+              <br />
+              <p style="color: blue; font-weight: 700">Cooking</p>
+            </div>
+          </div>
+        </div>
+        <button class="toggle-btn">View More</button>
+      </div>
+
+      <!-- Ngôn ngữ -->
+      <div class="section">
+        <h2 class="section-title">
+          Language <b style="margin-left: 8rem" class="ic-mic"></b>
+        </h2>
+        <!-- An thong tin ngon ngu -->
+        <div class="content-list hidden">
+          <p>English - TOEIC</p>
+          <div class="progress" style="--width: 20%; background-color: white">
+            <div class="progress-bar"></div>
+            <div class="progress-bar1"></div>
+            <div class="progress-bar1"></div>
+          </div>
+        </div>
+        <button class="toggle-btn">View More</button>
+      </div>
+
+      <!-- Kỹ năng -->
+      <div class="section">
+        <h2 class="section-title">
+          Skill <b style="margin-left: 8rem" class="ic-tools-2"></b>
+        </h2>
+        <!-- An thong tin ky nang -->
+        <div class="content-list hidden">
+          <h3 style="color: blue">Hard Skills</h3>
+          <p style="color: blue; font-weight: 700">
+            HTML,CSS,JavaScript, PHP, Java, C#: Fundamental
+          </p>
+          <div class="progress" style="--width: 20%; background-color: white">
+            <div class="progress-bar"></div>
+            <div class="progress-bar"></div>
+            <div class="progress-bar1"></div>
+          </div>
+
+          <p style="color: blue; font-weight: 700">
+            React, Laravel: Fundamental
+          </p>
+          <div class="progress" style="--width: 20%; background-color: white">
+            <div class="progress-bar"></div>
+            <div class="progress-bar"></div>
+            <div class="progress-bar1"></div>
+          </div>
+          <p style="color: blue; font-weight: 700">MySQL: Fundamental</p>
+          <div class="progress" style="--width: 20%; background-color: white">
+            <div class="progress-bar"></div>
+            <div class="progress-bar"></div>
+            <div class="progress-bar1"></div>
+          </div>
+          <h3 style="color: blue">Soft Skills</h3>
+          <p style="color: blue; font-weight: 700">Listening</p>
+          <p style="color: blue; font-weight: 700">Teamwork</p>
+          <p style="color: blue; font-weight: 700">Research</p>
+        </div>
+        <button class="toggle-btn">View More</button>
+      </div>
+      <!-- Kinh Nghiệm -->
+      <!-- <div class="section">
+        <h2 class="section-title">Kinh Nghiệm <b style="margin-left: 4rem;" class="ic-toolbox"></b></h2>
+        <ul class="content-list hidden">
+          <li class="content-item">
+            <p class="item-title" style="font-weight: 500;">Full Stack Developer - Công ty Y</p>
+            <div class="item-details">
+              <i style="color: rgb(79, 79, 79);">05/2022 - <i class="year" style="border-radius: 5px;">Hiện tại</i></i>
+              <p style="margin: 0; color: rgb(79, 79, 79);">- Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu đã có</p>
+              <p style="margin: 0; color: rgb(79, 79, 79);">- Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL (MySQL, SQLServer, NoSQL,...) và viết được các câu truy vấn</p>
+              <p style="margin: 0; color: rgb(79, 79, 79);">- Sử dụng ngôn ngữ server-side (Python, Java, ...) để xây dựng các Web Service</p>
+            </div>
+          </li>
+          <li class="content-item">
+            <p class="item-title" style="font-weight: 500;">Web Designer - Công ty X</p>
+            <div class="item-details">
+              <p><i style="color: rgb(79, 79, 79);">06/2025 - 04/2022</i></p>
+              <p style="margin: 0; color: rgb(79, 79, 79);">- Thiết kế Website dự án trên yêu cầu của khách hàng</p>
+              <p style="margin: 0; color: rgb(79, 79, 79);">- Sử dụng các công cụ: Figma, Canva, PTS</p>
+            </div>
+          </li>
+        </ul>
+        <button class="toggle-btn">View More</button>
+      </div> -->
+    </div>
+
+    <!-- Thông tin chứng chỉ - giải thưởng  -->
+    <!-- <div class="contents">
+      <h2 style="padding: 30px 0 30px 50px; background-color: #e9e9e9;">Chứng chỉ - Giải thưởng</h2>
+      <div class="certificates">
+        <div class="certificate" style="border-bottom: 2px solid #d6c08d; padding-bottom: 40px; background-color: #e9e9e9;">
+          <img src="images/Cert_DBI.png" alt="chứng chỉ xây dựng website đầu tiên">
+          <div class="sections">
+            <p style="margin: 10px 0 10px 0;">CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</p>
+            <p style="margin: 0; color: rgb(79, 79, 79);">- Chứng chỉ thuộc chương trình CCDN</p>
+            <p style="margin: 0; color: rgb(79, 79, 79);">-GPA: 8.6</p>
+          </div>
+        </div>
+        <div class="certificate" style="border-bottom: 2px solid #d6c08d; background-color: #e9e9e9;">
+          <div style="border-left: 2px solid #d6c08d ; padding-left: 20px;">
+            <img src="images/Cert_PRF.png" alt="Xây dựng phần mềm đầu tiên">
+            <div class="sections">
+              <p style="margin: 10px 0 10px 0;">CHỨNG CHỈ THIẾT KẾ DATABASE - FUNIX</p>
+              <p style="margin: 0; color: rgb(79, 79, 79);">- Chứng chỉ thuộc chương trình CCDN</p>
+              <p style="margin: 0; color: rgb(79, 79, 79);">- GPA: 8.9</p>
+            </div>
+          </div>
+        </div>
+        <div class="certificate" style="padding: 40px 0 40px 0; background-color: #e9e9e9;">
+          <img src="images/Cert_WEB.png" alt="Chứng chỉ xây dựng website đầu tiên">
+          <div class="sections">
+            <p style="margin: 10px 0 10px 0;">CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX</p>
+            <p style="margin: 0; color: rgb(79, 79, 79);">- Chứng chỉ thuộc chương trình CCDN</p>
+            <p style="margin: 0; color: rgb(79, 79, 79);">- GPA: 8.0</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- dự án -->
+    <h1 style="padding-left: 70px; color: #ffffff">Projects</h1>
+
+    <div class="container1" id="projects">
+      <div class="projects">
+        <div class="project">
+          <img src="images/cv.png" alt="CV Cá nhân" />
+          <a href="project.html"><h5>Personal CV</h5></a>
+          <div class="project-info">
+            <div style="margin-right: 40px">
+              <strong class="year">2025</strong>
+            </div>
+            <div class="proj" style="margin-right: 40px">
+              <i class="fas fa-user"></i> <b>Kiet</b>
+            </div>
+            <div><i class="icon-lamp"></i> <b>Developer</b></div>
+          </div>
+          <div class="project-tables">
+            <table>
+              <tr>
+                <td><strong>Description</strong></td>
+                <td>
+                  An online personal CV website containing personal information
+                  and professional skills.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Responsibilities</strong></td>
+                <td>- Develop code - Optimize code - Fix bugs</td>
+              </tr>
+              <tr>
+                <td><strong>Technologies</strong></td>
+                <td>-HTML, CSS, Bootstrap, Javascript, Git & Github,</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- thông tin dự án -->
+        <div class="project">
+          <img src="images/Jgame.png" alt="Phần mềm quản lý " />
+          <a href="project.html"><h5>Website JMini-Game</h5></a>
+          <div class="project-info">
+            <div>
+              <strong class="year" style="margin-right: 40px">2025</strong>
+            </div>
+            <div class="proj" style="margin-right: 40px">
+              <i class="fas fa-user"></i> <b>Kiet</b>
+            </div>
+            <div style="margin-right: 40px">
+              <i class="icon-lamp"></i><b>Developer</b>
+            </div>
+          </div>
+          <div class="project-tables">
+            <table>
+              <tr>
+                <td><strong>Description</strong></td>
+                <td>
+                  JMini-Game is a web-based entertainment platform featuring a
+                  collection of simple and engaging mini-games. A website is to
+                  provide users with a quick and relaxing gaming experience
+                  through lightweight and user-friendly games.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Responsibilities</strong></td>
+                <td>- Develop code - Optimize code - Fix bugs</td>
+              </tr>
+              <tr>
+                <td><strong>Technologies</strong></td>
+                <td>-HTML, CSS, Javascript, React, Git & Github</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="project">
+          <img src="images/book.png" alt="Trang web xem tin tức" />
+          <a href="project.html"><h5>Website Bookstore</h5></a>
+          <div class="project-info">
+            <div style="margin-right: 40px">
+              <strong class="year">2025</strong>
+            </div>
+            <div class="proj" style="margin-right: 40px">
+              <i class="fas fa-user"></i><b>Kiet</b>
+            </div>
+            <div style="margin-right: 40px">
+              <i class="icon-lamp"></i><b>Developer</b>
+            </div>
+          </div>
+          <div class="project-tables">
+            <table>
+              <tr>
+                <td><strong>Description</strong></td>
+                <td>
+                  The Bookstore Commercial Website is a team project designed to
+                  provide users with a seamless online book shopping experience.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Responsibilities</strong></td>
+                <td>
+                  - Develop code - Reviewed code - Optimize code - Fix bugs
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Technologies</strong></td>
+                <td>
+                  -HTML, CSS, JavaScript, and Laravel, UI/UX Design, Git &
+                  GitHub
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="contact" class="section mt-5 container-fluid">
+      <div class="contact-container ms-5">
+        <form id="contact-form" class="contact-form">
+          <div class="form-row">
+            <input
+              type="text"
+              name="first_name"
+              placeholder="First name"
+              class="text-black"
+              required />
+            <input
+              type="text"
+              name="last_name"
+              placeholder="Last name"
+              class="text-black"
+              required />
+          </div>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address"
+            class="text-black"
+            required />
+          <textarea
+            name="message"
+            placeholder="Message"
+            class="text-black"
+            required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+          <h3>Contact Info</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 17 Street, Linh Chieu Ward,
+            Thu Duc District
+          </p>
+          <p><i class="fas fa-phone"></i> +84 849 319 913</p>
+          <p><i class="fas fa-envelope"></i> kietluong333@gmail.com</p>
+          <p><i class="fab fa-github"></i>github.com/lkiet123</p>
+        </div>
+      </div>
+    </section>
+    <!-- thông tin mxh trong footer  -->
+    <footer class="social-links">
+      <a href="facebook.com"><i class="icon-facebook-circled"></i>
+        <p>Facebook</p></a>
+      <a href="linkedin.com"><i class="icon-linkedin-circled"></i>
+        <p>Linkedin</p></a>
+      <a href="github.com"><i class="fab fa-github"></i>
+        <p>Github</p></a>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
